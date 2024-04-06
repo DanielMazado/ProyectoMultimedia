@@ -2,11 +2,61 @@
 	<head>
 		<title>Beyond Imagination</title>
 		<style>
+			* {
+				box-sizing: border-box;
+				background-color:#c2c3c6;
+			}
+
+			p {
+				background-color:#9ba0bb;
+			}
+
+			.header {
+				text-align: center;
+			}
+
+			.title {
+				font-size: 2.5em;
+			}
+
+			#lema {
+				font-size: 1.5em;
+			}
+
+			.column {
+			  float: left;
+			  padding: 10px;
+			  margin: 10px;
+			  background-color:#9ba0bb;
+			}
+
+			.left {
+			  width: 55%;
+			}
+
+			.right {
+			  width: 35%;
+			}
+
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			#pregunta {
+			   font-weight: bold;
+			}
+
+			#disclaimer {
+				border-style: solid;
+				background-color: #ffffff;
+			}
 
 		</style>
 	</head>
 	<body>
-		<header>
+		<header class = "main header">
 			<div class="logo">
 				<img src="images/logo.jpg" alt="La imagen principal del videojuego." title="Imagen principal juego">
 			</div>
@@ -22,67 +72,86 @@
 
 		<header class="content header">
 			<h2 class="title">BEYOND IMAGINATION</h2>
-				<p id="lema">"Soy tú y estoy en ti. El demonio tras tus actos</p>	
+				<div id="lema">"Soy tú y estoy en ti. El demonio tras tus actos."</div>	
 		</header>
 
-		<article id="resumen">
-			<p>Noviembre, 1984, eres un joven hombre, 24 años, atrapado en una vida monótona y gris.</p> 
+		<main>
+			<section class="row">
+				<article id="resumen" class="column left">
+					<p>Noviembre, 1984, eres un joven hombre, 24 años, atrapado en una vida monótona y gris.</p> 
 
-			<p>Perdiste todo contacto con tus padres, ya que no aceptaban tu idea de vida ideal que querías tener, y decidiste buscarla por ti mismo.</p>
+					<p>Perdiste todo contacto con tus padres, ya que no aceptaban tu idea de vida ideal que querías tener, y decidiste buscarla por ti mismo.</p>
 
-			<p>Ahora, atrapado en un trabajo repetitivo y viviendo en un piso compartido con 3 personas, Alber (hombre, 26), y una pareja, Alma (mujer, 22) y Frank (hombre, 24); intentas con todo lo posible no caer en el gran pozo negro creado por tus propios pensamientos.</p>
+					<p>Ahora, atrapado en un trabajo repetitivo y viviendo en un piso compartido con 3 personas, Alber (hombre, 26), y una pareja, Alma (mujer, 22) y Frank (hombre, 24); intentas con todo lo posible no caer en el gran pozo negro creado por tus propios pensamientos.</p>
 
-			<p>Desvelándote todas las noches, viendo videos en Internet, el algoritmo te recomienda cada vez más y más videos sobre temas oscuros, siendo un canal uno que aparece muy constantemente, el cual comenta de forma alexitimia casos de criminales, mayormente asesinatos, y asesinos en serie.</p>
+					<p>Desvelándote todas las noches, viendo videos en Internet, el algoritmo te recomienda cada vez más y más videos sobre temas oscuros, siendo un canal uno que aparece muy constantemente, el cual comenta de forma alexitimia casos de criminales, mayormente asesinatos, y asesinos en serie.</p>
 
-			<p>Por cada noche que pasa, más tiempo aguantas despierto viendo esos videos, algo te llama la atención en ellos, notas que, por cada caso comentado que ves, más notas esa emoción de vivir y experimentar que querías en tu vida ideal.</p>
+					<p>Por cada noche que pasa, más tiempo aguantas despierto viendo esos videos, algo te llama la atención en ellos, notas que, por cada caso comentado que ves, más notas esa emoción de vivir y experimentar que querías en tu vida ideal.</p>
 
-			<p>Tras meses de consumo, no puedes parar de ver el mundo con la información de los videos que viste, como un matemático ve el espacio fragmentado en un entorno, o un físico ve la trayectoria que harán los coches en la carretera.</p>
+					<p>Tras meses de consumo, no puedes parar de ver el mundo con la información de los videos que viste, como un matemático ve el espacio fragmentado en un entorno, o un físico ve la trayectoria que harán los coches en la carretera.</p>
 
-			<p>Hasta que un día, tras llegar agotado a casa, ves como tus compañeros de piso están viendo una película, están feliz, tienen una buena relación entre ellos, una que tú nunca pudiste tener con ellos por el rechazo que te dieron desde que llegaste, esa felicidad por compañía que no sientes desde la última vez que estuviste con tus padres, estás triste, pero también celoso.</p>
+					<p>Hasta que un día, tras llegar agotado a casa, ves como tus compañeros de piso están viendo una película, están feliz, tienen una buena relación entre ellos, una que tú nunca pudiste tener con ellos por el rechazo que te dieron desde que llegaste, esa felicidad por compañía que no sientes desde la última vez que estuviste con tus padres, estás triste, pero también celoso.</p>
 
-			<p>Lo piensas, lo piensas mucho, ¿cómo sería en esta ocasión? ¿qué diferencia habría entre los ocurridos y el tuyo? ¿solo tu nombre? ¿el método? ¿sus gritos? No logras conseguir respuesta a esas preguntas, pero sabes que las quieres, así que tomas la decisión.</p>
+					<p>Lo piensas, lo piensas mucho, ¿cómo sería en esta ocasión? ¿qué diferencia habría entre los ocurridos y el tuyo? ¿solo tu nombre? ¿el método? ¿sus gritos? No logras conseguir respuesta a esas preguntas, pero sabes que las quieres, así que tomas la decisión.</p>
 
-			<p>“Tres tristes cuerpos sentados en el sofá, más allá de tu imaginación”, dice alguien, pero... estás solo.</p> 
+					<p>“Tres tristes cuerpos sentados en el sofá, más allá de tu imaginación”, dice alguien, pero... estás solo.</p> 
 
-			<p>“¿Quién es? ¿Dónde estás?”, preguntas.</p> 
+					<p>“¿Quién es? ¿Dónde estás?”, preguntas.</p> 
 
-			<p>“Soy tú, y estoy en ti”, contesta.</p>
+					<p>“Soy tú, y estoy en ti”, contesta.</p>
 
-			<p>“El demonio tras tus actos”, se presenta.</p>
+					<p>“El demonio tras tus actos”, se presenta.</p>
 
-			<p>Ahora lo sabes, todos esos actos de violencia que viste en los videos de Internet, esas declaraciones de los pecadores donde afirman que no fueron ellos, que Él los obligó, eran reales, y ahora te toca a ti. </p>
-		</article>
+					<p>Ahora lo sabes, todos esos actos de violencia que viste en los videos de Internet, esas declaraciones de los pecadores donde afirman que no fueron ellos, que Él los obligó, eran reales, y ahora te toca a ti. </p>
+				</article>
+				
+				<aside id="q&a" class="column right">
+					<p>
+						<strong style="background-color:#9ba0bb;">PREGUNTAS FRECUENTES</strong>
+					</p>
+					<p id="pregunta">
+						¿Quiénes somos?
+					</p>
+					<p id="respuesta">
+						Respuesta 1.
+					</p>
+
+					<p id="pregunta">
+						¿Cuándo estará disponible el juego?
+					</p>
+					<p id="respuesta">
+						Respuesta 2.
+					</p>
+
+					<p id="pregunta">
+						¿Cuánto costará el juego?
+					</p>
+					<p id="respuesta">
+						Respuesta 3.
+					</p>
+				</aside>
+
+			</section>
+
+			<nav id="dinero">
+				<h3 style="text-align: center;">TIERS POR DONACIONES</h3>
+					<div id= "tier1">Tier 1</div>
+					<div id= "tier2">Tier 2</div>
+					<div id= "tier3">Tier 3</div>
+			</nav>
+
+			<section class="row">
+				<article id="comentarios" class="column left">
+					Los comentarios de la web por aquí.
+				</article>
+				<aside id="redes" class="column right">
+					Redes sociales con iconos, que reproduzcan algun sonido en vez de usar enlaces, por ejemplo. Así nos ahorramos tener que hacerlas.
+				</aside>
+			</section>
 			
-		</section>
-		<main>
-			<aside id="q&a">
-				<div>
-					¿Quiénes somos?
-				</div>
-				<div>
-					¿Cuándo estará disponible el juego?
-				</div>
-				<div>
-					¿Cuánto costará el juego?
-				</div>
-			</aside>
-		</main>
-		<nav id="dinero">
-			<h3>TIERS POR DONACIONES</h3>
-			<div id= "tier1">Tier 1</div>
-			<div id= "tier2">Tier 2</div>
-			<div id= "tier3">Tier 3</div>
-		</nav>
-		<main>
-			<article id="comentarios">
-				Los comentarios de la web por aquí.
-			</article>
-			<aside id="redes">
-				Redes sociales con iconos, que reproduzcan algun sonido en vez de usar enlaces, por ejemplo. Así nos ahorramos tener que hacerlas.
-			</aside>
-		</main>
-		<nav id="disclaimer">
+			<nav id="disclaimer">
 			 ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV- Curso 23/24 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
-		</nav>
+			</nav>
+		</main>
 	</body>
 </html>
