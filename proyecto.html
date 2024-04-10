@@ -1,66 +1,11 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
 		<title>Beyond Imagination</title>
-		<style>
-			* {
-				box-sizing: border-box;
-				background-color:#c2c3c6;
-			}
-
-			p {
-				background-color:#9ba0bb;
-			}
-
-			.header {
-				text-align: center;
-			}
-
-			.title {
-				font-size: 2.5em;
-			}
-
-			#lema {
-				font-size: 1.5em;
-			}
-
-			.column {
-			  float: left;
-			  padding: 10px;
-			  margin: 10px;
-			  background-color:#9ba0bb;
-			}
-
-			.left {
-			  width: 55%;
-			}
-
-			.right {
-			  width: 35%;
-			}
-
-			.row:after {
-			  content: "";
-			  display: table;
-			  clear: both;
-			}
-
-			#pregunta {
-			   font-weight: bold;
-			}
-
-			#disclaimer {
-				border-style: solid;
-				background-color: #ffffff;
-			}
-
-		</style>
 	</head>
 	<body>
 		<header class = "main header">
-			<div class="logo">
-				<img src="images/logo.jpg" alt="La imagen principal del videojuego." title="Imagen principal juego">
-			</div>
-
 			<nav class="navbar">
 				<a href="#resumen">Resumen</a>
 				<a href="#q&a">Preguntas</a>
@@ -71,7 +16,7 @@
 		</header>
 
 		<header class="content header">
-			<h2 class="title">BEYOND IMAGINATION</h2>
+			<h2 class="title">BEYOND IMAGINATION</h2> &nbsp; &nbsp;
 				<div id="lema">"Soy tú y estoy en ti. El demonio tras tus actos."</div>	
 		</header>
 
@@ -105,8 +50,8 @@
 					<p>Ahora lo sabes, todos esos actos de violencia que viste en los videos de Internet, esas declaraciones de los pecadores donde afirman que no fueron ellos, que Él los obligó, eran reales, y ahora te toca a ti. </p>
 				</article>
 				
-				<aside id="q&a" class="column right">
-					<p>
+				<aside id="preguntas-respuestas" class="column right">
+					<p id="seccion-preguntas">
 						<strong style="background-color:#9ba0bb;">PREGUNTAS FRECUENTES</strong>
 					</p>
 					<p id="pregunta">
@@ -124,10 +69,16 @@
 					</p>
 
 					<p id="pregunta">
-						¿Cuánto costará el juego?
+						¿Qué tipo de juego será exactamente?
 					</p>
 					<p id="respuesta">
 						Respuesta 3.
+					</p>
+					<p id="pregunta">
+						¿Cuánto costará el juego?
+					</p>
+					<p id="respuesta">
+						Respuesta 4.
 					</p>
 				</aside>
 
@@ -135,9 +86,35 @@
 
 			<nav id="dinero">
 				<h3 style="text-align: center;">TIERS POR DONACIONES</h3>
-					<div id= "tier1">Tier 1</div>
-					<div id= "tier2">Tier 2</div>
-					<div id= "tier3">Tier 3</div>
+				<section class="box-container">
+					<div class="box">
+						<h3>Tier1</h3>
+						Ventajas de la tier 1.
+						<ul class="ventajas">
+							<li>Ventaja 1.</li>
+							<li>Ventaja 2.</li>
+							<li>Ventaja 3.</li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3>Tier2</h3>
+						Ventajas de la tier 2.
+						<ul class="ventajas">
+							<li>Ventaja 1.</li>
+							<li>Ventaja 2.</li>
+							<li>Todas las de la anterior tier.</li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3>Tier3</h3>
+						Ventajas de la tier 3.
+						<ul class="ventajas">
+							<li>Ventaja 1.</li>
+							<li>Ventaja 2.</li>
+							<li>Todas las de las anteriores tiers.</li>
+						</ul>
+					</div>
+				</section>
 			</nav>
 
 			<section class="row">
