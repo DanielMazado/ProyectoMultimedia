@@ -22,7 +22,11 @@ p {
 
 .navbar {
 	display: flex;
+	flex-wrap: no-wrap;
 	margin-right: 10px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .navbar a {
@@ -107,7 +111,7 @@ p {
 }
 
 .box-container .box {
-	height: 11rem;
+	height: 12rem;
 	width: 17rem;
 	background: #101010;
 	text-align: center;
@@ -116,12 +120,27 @@ p {
 	margin: 2rem;
 }
 
+.box-container .box h3 {
+	font-size: 1.25em;
+}
+
+.box-container .box p {
+	font-size: 1.15em;
+}
+
 .ventajas {
 	text-align: left;
+	font-size: 1.1em;
 }
 
 #pregunta {
    font-weight: bold;
+}
+
+#comentarios {
+  padding: 10px;
+  margin: 10px;
+  background-color:#9ba0bb;
 }
 
 #disclaimer {
