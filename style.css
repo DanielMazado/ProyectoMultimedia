@@ -10,6 +10,10 @@ p {
 	background-color:#9ba0bb;
 }
 
+body {
+	margin: 0;
+}
+
 .main {
 	display: flex;
 	align-items: center;
@@ -81,7 +85,7 @@ p {
 }
 
 .right {
-  width: 35%;
+  width: 40%;
 }
 
 .row:after {
@@ -96,7 +100,7 @@ p {
 }
 
 #preguntas-respuestas {
-	font-size: 1.2em;
+	font-size: 0.95em;
 }
 
 #dinero {
@@ -119,7 +123,7 @@ p {
 }
 
 .box-container .box {
-	height: 12rem;
+	height: 17rem;
 	width: 17rem;
 	background: #101010;
 	text-align: center;
@@ -129,13 +133,15 @@ p {
 }
 
 .box-container .box h3 {
-	font-size: 1.25em;
+	font-size: 1.2em;
 	background: #101010;
+	margin-bottom: 10px;
 }
 
 .box-container .box p {
-	font-size: 1.15em;
+	font-size: 1.1em;
 	background: #101010;
+	margin-bottom: 15px;
 }
 
 .ventajas {
@@ -146,7 +152,37 @@ p {
 
 .ventajas li {
 	background: #101010;
+	font-size: 0.95em;
 }
+
+#tier1 {
+	border: 2px solid #ff0000;
+}
+
+#tier2 {
+	border: 2px solid #ff9300;
+}
+
+#tier3 {
+	border: 2px solid #ffe000;
+}
+
+#tier4 {
+	border: 2px solid #00ff00;
+}
+
+#tier5 {
+	border: 2px solid #00fff0;
+}
+
+#tier6 {
+	border: 2px solid #004dff;
+}
+
+#tier7 {
+	border: 2px solid #7800ff;
+}
+
 
 #pregunta {
    font-weight: bold;
@@ -168,6 +204,7 @@ p {
 		font-size: 1em;
 	}
 }
+
 @media screen and (max-width: 1000px) {
 	.content {
 		height: 50vh !important;
@@ -176,6 +213,7 @@ p {
     	color: #9ba0ee;
 	}
 }
+
 @media screen and (max-width: 700px) {
 	.main {
 		background: none;
@@ -213,4 +251,10 @@ p {
     #lema {
         font-size: 0.75em;
     }
+
+    .column {
+	  float: none;
+	  width: auto;
+	  margin: 10 auto;
+	}
 }
