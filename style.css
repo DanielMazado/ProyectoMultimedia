@@ -163,6 +163,11 @@ p {
 	background-color: #ffffff;
 }
 
+@media screen and (max-width: 535px) {
+	#seccion-preguntas {
+		font-size: 1em;
+	}
+}
 @media screen and (max-width: 1000px) {
 	.content {
 		height: 50vh !important;
