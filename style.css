@@ -23,6 +23,7 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 100;
+	border-bottom: 5px solid #00adff;
 }
 
 .navbar {
@@ -77,6 +78,10 @@ body {
 	background-color:#9ba0bb;
 }
 
+#resumen p {
+	text-align: justify;
+}
+
 #resumen #definicion {
 	font-style: italic;
 }
@@ -126,12 +131,21 @@ body {
 
 #preguntas-respuestas {
 	font-size: 0.95em;
+	text-align: justify;
 }
 
 #redes h2 {
 	font-size: 1.25em;
 	text-align: center;
 	margin-top: 10px;
+}
+
+#redes #redSocialReal {
+	margin-top: 20px;
+}
+
+#redes #redSocialReal a {
+	height: 60%;
 }
 
 .buttons {
@@ -156,6 +170,7 @@ body {
 
 .buttons a:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 #dinero {
@@ -186,6 +201,7 @@ body {
 	border-radius: 1rem;
 	box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
 	margin: 2rem;
+	position: relative;
 }
 
 .box-container .box h3 {
@@ -211,34 +227,82 @@ body {
 	font-size: 0.95em;
 }
 
+.donar-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.donar-button button {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donar-button button:hover {
+  transform: scale(1.2);
+}
+
 #tier1 {
 	border: 2px solid #ff0000;
+}
+
+#tier1 button {
+	background-color: #ff0000;
 }
 
 #tier2 {
 	border: 2px solid #ff9300;
 }
 
+#tier2 button {
+	background-color: #ff9300;
+}
+
 #tier3 {
 	border: 2px solid #ffe000;
+}
+
+#tier3 button {
+	background-color: #ffe000;
 }
 
 #tier4 {
 	border: 2px solid #00ff00;
 }
 
+#tier4 button {
+	background-color: #00ff00;
+}
+
 #tier5 {
 	border: 2px solid #00fff0;
+}
+
+#tier5 button {
+	background-color: #00fff0;
 }
 
 #tier6 {
 	border: 2px solid #004dff;
 }
 
+#tier6 button {
+	background-color: #004dff;
+}
+
 #tier7 {
 	border: 2px solid #7800ff;
 }
 
+#tier7 button {
+	background-color: #7800ff;
+}
 
 #pregunta {
    font-weight: bold;
@@ -251,7 +315,7 @@ body {
 }
 
 #disclaimer {
-	border-style: solid;
+	border-top: 4px solid;
 	background-color: #ffffff;
 }
 

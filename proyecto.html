@@ -133,20 +133,12 @@
 					<h2><strong>REDES SOCIALES</strong></h2>
 					<section class="buttons">
 				      <a href="https://www.youtube.com/@SmileyPixelsStudio" class="fa fa-youtube" id="boton-youtube"></a>
-				      <a class="fa fa-instagram" id="boton-instagram"></a>
-				      <a class="fa fa-twitter" id="boton-twitter"></a>
+				      <a href="https://www.instagram.com/smileypixelsstudio/" class="fa fa-instagram" id="boton-instagram"></a>
+				      <a href="https://twitter.com/Smiley_Pixel_" class="fa fa-twitter" id="boton-twitter"></a>
 				      <a class="fa fa-steam" id="boton-steam"></a>
 				      <a class="fa fa-linkedin" id="boton-linkedin"></a>
 				      <audio id="splat" src="audio/splat.mp3"></audio>
 				      <script>
-						document.getElementById('boton-instagram').addEventListener('click', function() {
-						  var sonido = document.getElementById('splat');
-						  sonido.play();
-						});
-						document.getElementById('boton-twitter').addEventListener('click', function() {
-						  var sonido = document.getElementById('splat');
-						  sonido.play();
-						});
 						document.getElementById('boton-steam').addEventListener('click', function() {
 						  var sonido = document.getElementById('splat');
 						  sonido.play();
@@ -159,7 +151,7 @@
 				    </section>
 
 				    <section id="redSocialReal">
-				    	<p>Aquí irá la red social real.</p>
+				    	<a class="twitter-timeline" href="https://twitter.com/Smiley_Pixel_?ref_src=twsrc%5Etfw">Tweets by Smiley_Pixel_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				    </section>
 				</aside>
 			</section>
@@ -167,61 +159,114 @@
 			<nav id="dinero">
 				<h3 id = "tiers">TIERS POR DONACIONES</h3>
 				<section class="box-container">
-					<div class="box" id="tier1">
+					<section class="box" id="tier1">
 						<h3>Tipper </h3>
 						<p>Nivel 1 - [Entre 0€ y 2€]</p>
 						<ul class="ventajas">
 							<li>Aparecerás en la pantalla de agradecimientos.</li>
 						</ul>
-					</div>
-					<div class="box" id="tier2">
+						<div class="donar-button" id="boton1">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<section class="box" id="tier2">
 						<h3>Supporter</h3>
 						<p>Nivel 2 - [Entre 2€ y 10€]</p>
 						<ul class="ventajas">
 							<li>Recibirás actualizaciones comunes sobre el desarrollo del juego.</li>
 							<li>Todas las ventajas de tiers anteriores.</li>
 						</ul>
-					</div>
-					<div class="box" id="tier3">
+						<div class="donar-button" id="boton2">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<section class="box" id="tier3">
 						<h3>AAA</h3>
 						<p>Nivel 3 - [Entre 10€ y 18€]</p>
 						<ul class="ventajas">
-							<li>Tendrás acceso a comentarios de los desarrollares hablando de las tareas dentro del proyecto y como las están llevando a cabo.</li>
+							<li>Tendrás acceso a comentarios sobre el desarrollo de las tareas del proyecto.</li>
 							<li>Todas las ventajas de tiers anteriores.</li>
 						</ul>
-					</div>
-					<div class="box" id="tier4">
+						<div class="donar-button" id="boton3">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<section class="box" id="tier4">
 						<h3>AAAA</h3>
 						<p>Nivel 4 - [Entre 18€ y 36€] </p>
 						<ul class="ventajas">
-							<li>Tendrás acceso a noticias importantes y detalladas, así como a encuestas sobre el desarrollo del juego. </li>
+							<li>Tendrás acceso a noticias importantes y detalladas, y encuestas sobre el desarrollo. </li>
 							<li>Todas las ventajas de tiers anteriores.</li>
 						</ul>
-					</div>
-					<div class="box" id="tier5">
+						<div class="donar-button" id="boton4">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<section class="box" id="tier5">
 						<h3>AAAAA</h3>
 						<p>Nivel 5 - [Entre 36€ y 60€] </p>
 						<ul class="ventajas">
 							<li>Podrás mandar ideas al equipo de desarrollo para que las consideremos.</li>
 							<li>Todas las de las anteriores tiers.</li>
 						</ul>
-					</div>
-					<div class="box" id="tier6">
+						<div class="donar-button" id="boton5">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<section class="box" id="tier6">
 						<h3>AAAAAA</h3>
 						<p>Nivel 6 - [Entre 60€ y 100€]</p>
 						<ul class="ventajas">
 							<li>Ten un chat directo con nosotros y los demás AAAAAA. </li>
 							<li>Todas las de las anteriores tiers.</li>
 						</ul>
-					</div>
-					<div class="box" id="tier7">
+						<div class="donar-button" id="boton6">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<section class="box" id="tier7">
 						<h3>Pixelated Friend</h3>
 						<p>Nivel 7 - [+100€] </p>
 						<ul class="ventajas">
-							<li>¡Añádete al juego! Conviertete un personaje común dentro del mundo de Beyond Imagination.</li>
+							<li>¡Añádete al juego! Conviertete un personaje dentro de Beyond Imagination.</li>
 							<li>Todas las de las anteriores tiers.</li>
 						</ul>
-					</div>
+						<div class="donar-button" id="boton7">
+						    <button>DONAR</button>
+						</div>
+					</section>
+					<audio id="splat2" src="audio/splat.mp3"></audio>
+					<script>
+						document.getElementById('boton1').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+						document.getElementById('boton2').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+						document.getElementById('boton3').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+						document.getElementById('boton4').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+						document.getElementById('boton5').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+						document.getElementById('boton6').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+						document.getElementById('boton7').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat2');
+						  sonido.play();
+						});
+				      </script>
+
 				</section>
 			</nav>
 
