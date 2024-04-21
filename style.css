@@ -43,6 +43,10 @@ body {
 	font-size: 1.25em;
 }
 
+.navbar a:hover {
+	transform: scale(1.2);
+}
+
 .content {
 	height: 60vh !important;
 	background: url(images/Prueba_2.png) no-repeat center;
@@ -73,6 +77,27 @@ body {
 	background-color:#9ba0bb;
 }
 
+#resumen #definicion {
+	font-style: italic;
+}
+
+.video-container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .column {
   float: left;
   padding: 10px;
@@ -95,12 +120,42 @@ body {
 }
 
 #seccion-preguntas {
-	font-size: 1.25em;
+	font-size: 1.35em;
 	text-align: center;
 }
 
 #preguntas-respuestas {
 	font-size: 0.95em;
+}
+
+#redes h2 {
+	font-size: 1.25em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.buttons {
+  min-width: 140px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
 }
 
 #dinero {
@@ -200,18 +255,53 @@ body {
 	background-color: #ffffff;
 }
 
-@media screen and (max-width: 535px) {
-	#seccion-preguntas {
-		font-size: 1em;
+@media screen and (max-width: 175px) {
+	.buttons {
+		flex-direction: column;
 	}
 }
 
-@media screen and (max-width: 1000px) {
-	.content {
-		height: 50vh !important;
-    	background: url(images/Prueba_2.png) no-repeat center;
-    	background-size: 100% auto;
-    	color: #9ba0ee;
+@media screen and (max-width: 350px) {
+	.navbar {
+		opacity: 0.5;
+	}
+
+	.navbar a {
+		padding: 23px 20px;
+		font-size: 0.95em;
+	}
+
+	.buttons {
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	  
+	.buttons a {
+	    margin: 5px; 
+	}
+
+	.box-container .box h3 {
+		font-size: 1em;
+		margin-bottom: 4px;
+	}
+
+	.box-container .box p {
+		font-size: 0.95em;
+		margin-bottom: 4px;
+	}
+
+	.ventajas {
+		font-size: 0.95em;
+	}
+
+	.ventajas li {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	#seccion-preguntas {
+		font-size: 1em;
 	}
 }
 
@@ -252,10 +342,21 @@ body {
     #lema {
         font-size: 0.75em;
     }
+}
 
-    .column {
+@media screen and (max-width: 820px) {
+	.column {
 	  float: none;
 	  width: auto;
 	  margin: 10 auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.content {
+		height: 50vh !important;
+    	background: url(images/Prueba_2.png) no-repeat center;
+    	background-size: 100% auto;
+    	color: #9ba0ee;
 	}
 }

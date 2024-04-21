@@ -3,7 +3,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
 		<title>Beyond Imagination</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-A5y/8zF33REoZWEkgQwKYqmdG2kqjo/wzJXz3Cj1A+TX4NSvRxDiQgf8KCAGVwt9tPl/qFp/NJDVbHZtcKpNuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header class = "main header">
@@ -35,10 +35,13 @@
 
 					<p>¿Quién acabará contigo? ¿Él, o tú mismo?”</p> 
 
-					<p>Thyma: Victima; en griego.</p>
+					<p id="definicion">Thyma: Victima; en griego.</p>
 
 					<p> Asimismo, el video de 1 minuto promocional del juego:</p>
-					
+
+					<div class="video-container">
+					  <iframe src="https://www.youtube.com/embed/c4UK4nJzi28" frameborder="0" allowfullscreen></iframe>
+					</div>
 
 					<h2>HISTORIA</h2>
 					<p>Noviembre, 1984, eres un joven hombre, 24 años, atrapado en una vida monótona y gris.</p> 
@@ -127,7 +130,41 @@
 					</p>
 				</aside>
 				<aside id="redes" class="column right">
-						Redes sociales con iconos, que reproduzcan algun sonido en vez de usar enlaces, por ejemplo. Hay que hacer como mínimo una red social real para mostrarla en la página.
+					<h2><strong>REDES SOCIALES</strong></h2>
+					<section class="buttons">
+				      <a class="fa fa-youtube" id="boton-youtube"></a>
+				      <a class="fa fa-instagram" id="boton-instagram"></a>
+				      <a class="fa fa-twitter" id="boton-twitter"></a>
+				      <a class="fa fa-steam" id="boton-steam"></a>
+				      <a class="fa fa-linkedin" id="boton-linkedin"></a>
+				      <audio id="splat" src="audio/splat.mp3"></audio>
+				      <script>
+				      	document.getElementById('boton-youtube').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat');
+						  sonido.play();
+						});
+						document.getElementById('boton-instagram').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat');
+						  sonido.play();
+						});
+						document.getElementById('boton-twitter').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat');
+						  sonido.play();
+						});
+						document.getElementById('boton-steam').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat');
+						  sonido.play();
+						});
+						document.getElementById('boton-linkedin').addEventListener('click', function() {
+						  var sonido = document.getElementById('splat');
+						  sonido.play();
+						});
+				      </script>
+				    </section>
+
+				    <section id="redSocialReal">
+				    	<p>Aquí irá la red social real.</p>
+				    </section>
 				</aside>
 			</section>
 
@@ -216,9 +253,9 @@
 				</article>
 			</section>
 			
-			<nav id="disclaimer">
+			<footer id="disclaimer">
 			 ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV- Curso 23/24 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
-			</nav>
+			</footer>
 		</main>
 	</body>
 </html>
