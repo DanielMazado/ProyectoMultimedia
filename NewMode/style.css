@@ -48,7 +48,7 @@ body {
 
 .content {
 	height: 60vh !important;
-	background: url(images/Prueba_2.png) no-repeat center;
+	background: url(images/main.jpg) no-repeat center;
 	background-size: cover;
 	background-position: center;
 	color: #9ba0ee;
@@ -78,6 +78,14 @@ body {
 #historia h2 {
 	font-size: 2.4em;
 	text-align: center;
+}
+
+#resumen h1 {
+	font-size: 1.3em;
+}
+
+.row #fila1 {
+	height: 70vh !important;
 }
 
 #resumen p {
