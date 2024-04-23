@@ -1,10 +1,15 @@
 * {
 	box-sizing: border-box;
-	font-size: 100%;
+	font-size: 105%;
 	vertical-align: baseline;
-	font-family: Tahoma;
+	font-family: Multimedia;
 	color: whitesmoke;
 	/*background-color: #e8e8e8;*/
+}
+
+@font-face {
+  font-family: Multimedia;
+  src: url('fonts/Multimedia-Regular.ttf') format('truetype');
 }
 
 body {
@@ -209,7 +214,7 @@ body {
 }
 
 .box-container .box {
-	height: 18rem;
+	height: 22rem;
 	width: 26rem;
 	background: #101010;
 	text-align: center;
@@ -345,7 +350,7 @@ body {
 	padding: 12px;
 	margin: 4px;
 	margin-bottom: 24px;
-	font-size: 16px;
+	font-size: 20px;
 	font-style: italic;
 	text-align: center;
 }
@@ -424,8 +429,7 @@ body {
     }
 
     .content {
-        height: 45vh !important;
-    	background: url(images/Prueba_2.png) no-repeat center;
+      height: 45vh !important;
     	background-size: 100% auto;
     	color: #9ba0ee;
     }
@@ -449,8 +453,7 @@ body {
 
 @media screen and (max-width: 1000px) {
 	.content {
-		height: 50vh !important;
-    	background: url(images/Prueba_2.png) no-repeat center;
+			height: 50vh !important;
     	background-size: 100% auto;
     	color: #9ba0ee;
 	}
