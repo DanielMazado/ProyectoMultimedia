@@ -463,3 +463,9 @@ body {
     	color: #9ba0ee;
 	}
 }
+
+@media only screen {
+	.column {
+		width: 100%;
+	}
+}
