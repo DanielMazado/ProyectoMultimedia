@@ -80,13 +80,10 @@ body {
 	font-size: 2.4em;
 	text-align: center;
 }
+
 #historia h2 {
 	font-size: 2.4em;
 	text-align: center;
-}
-
-#resumen h1 {
-	font-size: 1.3em;
 }
 
 .row #fila1 {
@@ -154,18 +151,29 @@ body {
 	padding: 36px;
 }
 
-#redes h2 {
+#equipo h2 {
 	font-size: 2.25em;
 	text-align: center;
 	margin-top: 10px;
 }
 
-#redes #redSocialReal {
+#equipo #redSocialReal {
 	margin-top: 20px;
 }
 
-#redes #redSocialReal a {
+#equipo #redSocialReal a {
 	height: 60%;
+}
+
+#equipo #container {
+	text-align: center;
+}
+
+#equipo #logoCreditos {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
 }
 
 .buttons {
@@ -369,6 +377,18 @@ body {
 	.navbar a {
 		padding: 23px 20px;
 		font-size: 0.95em;
+	}
+
+	#resumen h2 {
+		font-size: 1.9em;
+	}
+
+	#historia h2 {
+		font-size: 1.9em;
+	}
+
+	#seccion-preguntas {
+		font-size: 1.9em;
 	}
 
 	.buttons {

@@ -33,12 +33,17 @@
 						<p>Se capaz de escapar de la policía, mientras sigues tomando malas decisiones por culpa de tu nuevo compañero de vida. Busca formas de aguantar la sed de sangre que tu nuevo amigo genera en ti, mientras mantienes la poca cordura y vida que te queda.</p>
 						<p>¿Cúantas muertes ocurrirán a tus manos antes de que tomes tu última decisión?</p>
 						<p>¿Quién acabará contigo? ¿Él, o tú mismo?</p>
-						<br>
-						<h1 align="center">VIDEO PROMOCIONAL</h1>
+						
+						<h2 align="center">VIDEO PROMOCIONAL</h2>
 
-						<div class="video-container">
+						<section class="video-container">
 						  <iframe src="https://www.youtube.com/embed/c4UK4nJzi28" frameborder="0" allowfullscreen></iframe>
-						</div>
+						</section>
+
+						<section class="audio-player">
+							<h2>MÚSICA DEL JUEGO</h2>
+							<p>Aquí irá el reproductor de audio con la música del juego.</p>
+						</section>
 					</article>
 					<article id="historia" class="column right">
 						
@@ -135,29 +140,59 @@
 					</p><br>
 
 				</aside>
-				<aside id="redes" class="column right">
-					<h2><strong>REDES SOCIALES</strong></h2>
-					<section class="buttons">
-				      <a href="https://www.youtube.com/@SmileyPixelsStudio" class="fa fa-youtube" id="boton-youtube"></a>
-				      <a href="https://www.instagram.com/smileypixelsstudio/" class="fa fa-instagram" id="boton-instagram"></a>
-				      <a href="https://twitter.com/Smiley_Pixel_" class="fa fa-twitter" id="boton-twitter"></a>
-				      <a class="fa fa-steam" id="boton-steam"></a>
-				      <a class="fa fa-linkedin" id="boton-linkedin"></a>
-				      <audio id="splat" src="audio/splat.mp3"></audio>
-				      <script>
-				      	var sonido = document.getElementById('splat');
-						document.getElementById('boton-steam').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton-linkedin').addEventListener('click', function() {
-						  sonido.play();
-						});
-				      </script>
-				    </section>
+				<aside id="equipo" class="column right">
+					<section id="redes">
+						<h2><strong>REDES SOCIALES</strong></h2>
+						<section class="buttons">
+					      <a href="https://www.youtube.com/@SmileyPixelsStudio" class="fa fa-youtube" id="boton-youtube"></a>
+					      <a href="https://www.instagram.com/smileypixelsstudio/" class="fa fa-instagram" id="boton-instagram"></a>
+					      <a href="https://twitter.com/Smiley_Pixel_" class="fa fa-twitter" id="boton-twitter"></a>
+					      <a class="fa fa-steam" id="boton-steam"></a>
+					      <a class="fa fa-linkedin" id="boton-linkedin"></a>
+					      <audio id="splat" src="audio/splat.mp3"></audio>
+					      <script>
+					      	var sonido = document.getElementById('splat');
+							document.getElementById('boton-steam').addEventListener('click', function() {
+							  sonido.play();
+							});
+							document.getElementById('boton-linkedin').addEventListener('click', function() {
+							  sonido.play();
+							});
+					      </script>
+					    </section>
 
-				    <section id="redSocialReal">
-				    	<a class="twitter-timeline" href="https://twitter.com/Smiley_Pixel_?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				    </section>
+					    <section id="redSocialReal">
+					    	<a class="twitter-timeline" href="https://twitter.com/Smiley_Pixel_?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					    </section>
+					</section>
+					<br>
+					<section id="creditos">
+						<h2><strong>EQUIPO DE DESARROLLO</strong></h2>
+							<div id="container">
+								<img id="logoCreditos"src="images/logo.jpg"></img>
+							</div>
+							<h3><strong>DESARROLLO WEB Y PROGRAMACIÓN</strong></h3>
+								<ul>
+									<li>MANUEL HURTADO MONTLLOR</li>
+									<li>ÁNGEL YOUNES KARIM MÉRIDA</li>
+									<li>DANIEL MAZO SOLA</li>
+								</ul>
+							<h3><strong>DISEÑO ARTÍSTICO</strong></h3>
+								<ul>
+									<li>DANIEL CORBACHO ANES</li>
+									<li>ESTER DÍAZ MONZONIS</li>
+									<li>MARÍA FERNANDA MONTERO ROMÁN</li>
+								</ul>
+							<h3><strong>TRÁILER DEL JUEGO</strong></h3>
+							<ul>
+								<li>DANIEL CORBACHO ANES</li>
+								<li>MARÍA FERNANDA MONTERO ROMÁN</li>
+							</ul>
+							<h3><strong>TIPOGRAFÍA WEB</strong></h3>
+							<ul>
+								<li>ESTER DÍAZ MONZONIS</li>
+							</ul>
+					</section>
 				</aside>
 			</section>
 
