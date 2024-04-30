@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="images/logo.jpg">
 		<title>Beyond Imagination</title>
@@ -42,8 +43,89 @@
 
 						<section class="audio-player">
 							<h2>MÚSICA DEL JUEGO</h2>
-							<p>Aquí irá el reproductor de audio con la música del juego.</p>
+							<div class="music-player-container">
+								<div class="title-music-container">
+									<h4 class="song-title">Beyond Imagination OST</h4>
+									<span class="song-autor">María Fernanda Montero</span>
+								</div>
+								<div class="controls-music-container">
+									<div class="progress-song-container">
+										<div class="progress-bar">
+											<span class="progress"></span>
+										</div>
+									</div>
+									<div class="time-container">
+										<span class="time-left" id="CurrentSongTime"></span>
+										<span class="time-left" id="SongLength"></span>
+									</div>
+								</div>
+								<audio controls = "metadata" src="audio/BeyondImagination_OST_Corto.mp3"></audio>
+								<div class="main-song-controls">
+									<img src="images/Backward.svg" alt="" class="icon" id="Back10">
+									<img src="images/Play.svg" alt="" class="icon" id="PlayPause">
+									<img src="images/Forward.svg" alt="" class="icon" id="Plus10">
+								</div>
+							</div>
+							<script>
+								const audio = document.querySelector('audio'),
+									songLength = document.getElementById('SongLength'),
+									currentTime = document.getElementById('CurrentSongTime');
+
+								const calculateTime = (secs) =>{
+									const minutes = Math.floor(secs / 60),
+										seconds = Math.floor(secs % 60),
+										returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+										return `${minutes}:${returnedSeconds}`;
+								}
+
+								const displayDuration = () =>{
+									songLength.innerHTML = calculateTime(audio.duration);
+								}
+
+								if (audio.readyState > 0){
+									displayDuration();
+									currentTime.innerHTML = calculateTime(audio.currentTime);
+								}else{
+									audio.addEventListener('loadedmetadata', () =>{
+										displayDuration();
+									})
+								}
+
+								audio.ontimeupdate = function(){
+									currentTime.innerHTML = calculateTime(audio.currentTime);
+									setProgress();
+								}
+
+								function setProgress(){
+									let percentage = (audio.currentTime / audio.duration) * 100;
+									document.querySelector('.progress').style.width = percentage + '%';
+								}
+
+								//Audio Controls
+								const playPause = document.getElementById('PlayPause'),
+									plus10 = document.getElementById('Plus10'),
+									back10 = document.getElementById('Back10');
+
+								playPause.addEventListener('click', ()=>{
+									if (audio.paused){
+										playPause.src = './images/pause.svg';
+										audio.play();
+									}else{
+										playPause.src = './images/Play.svg';
+										audio.pause();
+									}
+								})
+
+								plus10.addEventListener('click', ()=>{
+									audio.currentTime +=10;
+								})
+
+								back10.addEventListener('click', ()=>{
+									audio.currentTime -=10;
+								})
+							</script>
 						</section>
+
 					</article>
 					<article id="historia" class="column right">
 						
