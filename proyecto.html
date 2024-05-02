@@ -15,7 +15,7 @@
 				<a href="#preguntas-respuestas">Preguntas</a>
 				<a href="#dinero">Donar</a>
 				<a href="#comentarios">Comentarios</a>
-				<a href="#redes">Redes</a>
+				<a href="#equipo">Redes</a>
 			</nav>
 		</header>
 
@@ -67,64 +67,7 @@
 									<img src="images/Forward.svg" alt="" class="icon" id="Plus10">
 								</div>
 							</div>
-							<script>
-								const audio = document.querySelector('audio'),
-									songLength = document.getElementById('SongLength'),
-									currentTime = document.getElementById('CurrentSongTime');
-
-								const calculateTime = (secs) =>{
-									const minutes = Math.floor(secs / 60),
-										seconds = Math.floor(secs % 60),
-										returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-										return `${minutes}:${returnedSeconds}`;
-								}
-
-								const displayDuration = () =>{
-									songLength.innerHTML = calculateTime(audio.duration);
-								}
-
-								if (audio.readyState > 0){
-									displayDuration();
-									currentTime.innerHTML = calculateTime(audio.currentTime);
-								}else{
-									audio.addEventListener('loadedmetadata', () =>{
-										displayDuration();
-									})
-								}
-
-								audio.ontimeupdate = function(){
-									currentTime.innerHTML = calculateTime(audio.currentTime);
-									setProgress();
-								}
-
-								function setProgress(){
-									let percentage = (audio.currentTime / audio.duration) * 100;
-									document.querySelector('.progress').style.width = percentage + '%';
-								}
-
-								//Audio Controls
-								const playPause = document.getElementById('PlayPause'),
-									plus10 = document.getElementById('Plus10'),
-									back10 = document.getElementById('Back10');
-
-								playPause.addEventListener('click', ()=>{
-									if (audio.paused){
-										playPause.src = './images/pause.svg';
-										audio.play();
-									}else{
-										playPause.src = './images/Play.svg';
-										audio.pause();
-									}
-								})
-
-								plus10.addEventListener('click', ()=>{
-									audio.currentTime +=10;
-								})
-
-								back10.addEventListener('click', ()=>{
-									audio.currentTime -=10;
-								})
-							</script>
+							<script src="scripts/reproductor-musica.js"></script>
 						</section>
 
 					</article>
@@ -232,16 +175,6 @@
 					      <a href="https://twitter.com/Smiley_Pixel_" class="fa fa-twitter" id="boton-twitter"></a>
 					      <a class="fa fa-steam" id="boton-steam"></a>
 					      <a class="fa fa-linkedin" id="boton-linkedin"></a>
-					      <audio id="splat" src="audio/splat.mp3"></audio>
-					      <script>
-					      	var sonido = document.getElementById('splat');
-							document.getElementById('boton-steam').addEventListener('click', function() {
-							  sonido.play();
-							});
-							document.getElementById('boton-linkedin').addEventListener('click', function() {
-							  sonido.play();
-							});
-					      </script>
 					    </section>
 
 					    <section id="redSocialReal">
@@ -359,30 +292,7 @@
 						</div>
 					</section>
 					<audio id="splat2" src="audio/splat.mp3"></audio>
-					<script>
-						var sonido = document.getElementById('splat2');
-						document.getElementById('boton1').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton2').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton3').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton4').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton5').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton6').addEventListener('click', function() {
-						  sonido.play();
-						});
-						document.getElementById('boton7').addEventListener('click', function() {
-						  sonido.play();
-						});
-				      </script>
+					<script src="scripts/sonidos.js"></script>
 
 				</section>
 			</nav>
@@ -390,23 +300,7 @@
 			<section class="row">
 				<article id="comentarios">
 					<div id="disqus_thread"></div>
-						<script>
-						    /**
-						    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-						    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-						    
-						    var disqus_config = function () {
-						    this.page.url = 'https://github.com/DanielMazado/ProyectoMultimedia/proyecto.html';  // Replace PAGE_URL with your page's canonical URL variable
-						    this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-						    };
-						    
-						    (function() { // DON'T EDIT BELOW THIS LINE
-						    var d = document, s = d.createElement('script');
-						    s.src = 'https://beyond-imagination-multimedia.disqus.com/embed.js';
-						    s.setAttribute('data-timestamp', +new Date());
-						    (d.head || d.body).appendChild(s);
-						    })();
-						</script>
+						<script src="scripts/comentarios.js"></script>
 						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 				</article>
 			</section>
@@ -417,29 +311,6 @@
 			 Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV- Curso 23/24 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
 			</footer>
 		</main>
-		<script>
-				$(document).ready(function(){
-				    // Agregar un controlador de eventos para todos los enlaces en el documento
-				    $('a[href^="#"]').on('click', function(event) {
-				        // Asegurarse de que el hash tiene un valor antes de anular el comportamiento predeterminado del enlace
-				        if (this.hash !== "") {
-				            // Evitar el comportamiento predeterminado del enlace
-				            event.preventDefault();
-
-				            // Almacenar el hash
-				            var hash = this.hash;
-
-				            // Usar jQuery's animate() para animar el desplazamiento suave
-				            // La animación tardará 800 milisegundos
-				            $('html, body').animate({
-				                scrollTop: $(hash).offset().top - 50
-				            }, 800, function(){
-				                // Agregar hash (#) a la URL cuando se haya desplazado con éxito
-				                window.location.hash = hash;
-				            });
-				        }
-				    });
-				});
-			</script>
+		<script src="scripts/desplazamiento.js"></script>
 	</body>
 </html>
