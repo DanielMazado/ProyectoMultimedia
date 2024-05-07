@@ -9,7 +9,7 @@ $(document).ready(function(){
 			// Almacenar el hash
 			var hash = this.hash;
 			var offset = window.innerHeight * 0.2;
-			
+
 			// Usar jQuery's animate() para animar el desplazamiento suave
 			// La animación tardará 800 milisegundos
 			$('html, body').animate({

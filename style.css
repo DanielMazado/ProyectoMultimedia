@@ -56,7 +56,6 @@ body {
 	background: url(images/main.jpg) no-repeat center;
 	background-size: cover;
 	background-position: center;
-	color: #9ba0ee;
 }
 
 .header {
@@ -251,6 +250,7 @@ audio{
 #seccion-preguntas {
 	font-size: 2.1em;
 	text-align: center;
+	margin-top: 10px;
 }
 
 #preguntas-respuestas {
@@ -478,9 +478,6 @@ audio{
 }
 
 @media screen and (max-width: 350px) {
-	.navbar {
-		opacity: 0.8;
-	}
 
 	.navbar a {
 		padding: 23px 20px;
@@ -530,6 +527,10 @@ audio{
 }
 
 @media screen and (max-width: 535px) {
+	.navbar {
+		opacity: 0.8;
+	}
+
 	#seccion-preguntas {
 		font-size: 1em;
 	}
@@ -540,37 +541,16 @@ audio{
 		background: none;
 	}
 
-	.navbar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center; 
-        align-items: center;
-        background: #252525;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width:100%;
-    }
+  .navbar a {
+      padding: 10px 20px;
+      margin: 5px;
+  }
 
-
-    .navbar a {
-        padding: 10px 20px;
-        margin: 5px;
-    }
-
-    .content {
-      height: 45vh !important;
-    	background-size: 100% auto;
-    	color: #9ba0ee;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    #lema {
-        font-size: 0.75em;
-    }
+  .content {
+    height: 45vh !important;
+  	background-size: 100% auto;
+  	color: #9ba0ee;
+  }
 }
 
 @media screen and (max-width: 1064px) {
@@ -582,6 +562,42 @@ audio{
 	#equipo {
 		float: none;
 	}
+
+    #lema {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+	.navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    background: #252525;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    margin: 5px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  #lema {
+    font-size: 1.4em;
+  }
+
+  #creditos h2 {
+  	font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 1000px) {
