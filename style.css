@@ -331,13 +331,15 @@ audio{
 
 .box-container .box {
 	height: 28rem;
-	width: 26rem;
+	width: 30rem;
 	background: #101010;
 	text-align: center;
 	border-radius: 1rem;
 	box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
 	margin: 1rem;
 	position: relative;
+	padding-right: 44px;
+	padding-left: 44px;
 }
 
 .box-container .box h3 {
@@ -551,7 +553,7 @@ audio{
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1064px) {
 	.column {
 	  width: auto;
 	  margin: 10 auto;

@@ -8,18 +8,13 @@ $(document).ready(function(){
 
 			// Almacenar el hash
 			var hash = this.hash;
-
-			// Definir el offset para el desplazamiento.
-			var offset = -50;
-			if (hash === "#comentarios") {
-				offset = -80; // Puedes ajustar este valor según sea necesario
-			}
+			var offset = window.innerHeight * 0.2;
 
 			// Usar jQuery's animate() para animar el desplazamiento suave
 			// La animación tardará 800 milisegundos
 			$('html, body').animate({
 
-				scrollTop: $(hash).offset().top + offset
+				scrollTop: $(hash).offset().top - offset
 				}, 800, function(){
 				    // Agregar hash (#) a la URL cuando se haya desplazado con éxito
 				    window.location.hash = hash;
