@@ -274,23 +274,26 @@ audio{
 	text-align: justify;
 	padding: 36px;
 }
-#equipo{
+
+#equipo {
 	font-family: Multimedia;
 }
+
 #equipo h2 {
-	
 	font-size: 2.25em;
 	text-align: center;
 	margin-top: 30px;
 }
 
+#equipo #redes i {
+	margin-top: 14.5px;
+}
+
 #equipo #redSocialReal {
-	
 	margin-top: 20px;
 }
 
 #equipo #redSocialReal a {
-;
 	height: 60%;
 }
 
