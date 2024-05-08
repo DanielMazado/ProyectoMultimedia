@@ -626,7 +626,7 @@ font-family: Multimedia;
 
 @media screen and (max-width: 1064px) {
 	.column {
-	  width: auto;
+	  width: 100%;
 	  margin: 10 auto;
 	}
 
@@ -666,11 +666,11 @@ font-family: Multimedia;
     font-size: 1.4em;
   }
 
-#creditos section {
-	font-family: Multimedia;
-}
+	#creditos section {
+		font-family: Multimedia;
+	}
+
   #creditos h2 {
-  
   	font-size: 1.8em;
   }
 }
