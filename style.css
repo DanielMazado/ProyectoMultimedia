@@ -108,7 +108,7 @@ body {
 	text-align: justify;
 }
 #historia p {
-	font-family: Multimedia;
+	font-family: Multimedia, Fuentenumeros;
 	font-size: 1.1em;
 	margin: 1em;
 	text-align: justify;
@@ -354,6 +354,7 @@ audio{
 	justify-content: center;
 	flex-wrap: wrap;
 	text-align: center;
+	align-items: center;
 	background: #1f1d1d;
 }
 
@@ -511,6 +512,52 @@ font-family: Multimedia;
 	background-color: #7800ff;
 }
 
+#tiers2 {
+	font-family: Multimedia;
+	text-align: center;
+	background: #1f1d1d;
+	font-size: 1.8em;
+}
+
+.box-container .box2 {
+  font-family: Multimedia, Fuentenumeros;
+  height: 15rem;
+  width: 25rem;
+  background: #101010;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+  margin: 1rem;
+  position: relative;
+}
+
+#recompensa1 {
+	border: 4px solid darkred;
+}
+
+#recompensa2 {
+	border: 4px solid darkorange;
+}
+
+#recompensa3 {
+	border: 4px solid darkgreen;
+}
+
+#recompensa4 {
+	border: 4px solid darkblue;
+}
+
+.box-container .box2 h3 {
+	font-size: 1.5em;
+	background: #101010;
+}
+
+.box-container .box2 p {
+	font-size: 1.2em;
+	background: #101010;
+	margin-bottom: 15px;
+}
+
 #pregunta {
    font-style: italic;
    font-size: 1.2em;
@@ -575,16 +622,6 @@ font-family: Multimedia;
 	.buttons a {
 	    margin: 5px; 
 	}
-
-	.box-container .box h3 {
-		font-size: 1em;
-		margin-bottom: 4px;
-	}
-
-	.box-container .box p {
-		font-size: 0.95em;
-		margin-bottom: 4px;
-	}
 }
 
 @media screen and (max-width: 400px) {
@@ -595,6 +632,27 @@ font-family: Multimedia;
 	.ventajas li {
 		font-size: 0.9em;
 	}
+
+	#recompensas .box2 {
+	  height: 10rem;
+	  width: 35rem;
+	  margin: 1rem;
+	}
+
+	.box-container .box h3 {
+		font-size: 1em;
+		margin-bottom: 4px;
+	}
+
+	#recompensas .box2 h3 {
+		font-size: 0.9em;
+		margin-bottom: 4px;
+	}
+
+	#recompensas .box2 p {
+		font-size: 0.6em;
+		margin-bottom: 4px;
+	}
 }
 
 @media screen and (max-width: 535px) {
@@ -604,6 +662,33 @@ font-family: Multimedia;
 
 	#seccion-preguntas {
 		font-size: 1em;
+	}
+
+	.box-container .box {
+		margin: 0.2rem;
+		position: relative;
+		padding-right: 22px;
+		padding-left: 22px;
+	}
+
+	.box-container .box h3 {
+		font-size: 1em;
+		margin-bottom: 4px;
+	}
+
+	.box-container .box p {
+		font-size: 0.75em;
+		margin-bottom: 4px;
+	}
+
+	.box-container .box2 h3 {
+		font-size: 1.4em;
+		margin-bottom: 4px;
+	}
+
+	.box-container .box2 p {
+		font-size: 1.15em;
+		margin-bottom: 4px;
 	}
 }
 
@@ -622,22 +707,6 @@ font-family: Multimedia;
   	background-size: 100% auto;
   	color: #9ba0ee;
   }
-}
-
-@media screen and (max-width: 1064px) {
-	.column {
-	  width: 100%;
-	  margin: 10 auto;
-	}
-
-	#equipo {
-		float: none;
-	}
-
-    #lema {
-        font-size: 1.3em;
-    }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -683,8 +752,18 @@ font-family: Multimedia;
 	}
 }
 
-/*@media only screen {
+@media screen and (max-width: 1064px) {
 	.column {
-		width: 100%;
+	  width: 100%;
+	  margin: 10 auto;
 	}
-}*/
+
+	#equipo {
+		float: none;
+	}
+
+    #lema {
+        font-size: 1.3em;
+    }
+
+}
