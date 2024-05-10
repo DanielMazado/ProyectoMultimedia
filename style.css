@@ -656,6 +656,10 @@ font-family: Multimedia;
 }
 
 @media screen and (max-width: 535px) {
+	.main {
+		border-bottom: none;
+	}
+
 	.navbar {
 		opacity: 0.8;
 	}
