@@ -19,13 +19,6 @@ Puedes encontrar más proyectos míos en mi [perfil de GitHub](https://github.co
 
 ## Créditos
 
-Daniel Mazo Sola
-Ángel Younes Karim Mérida
-Manuel Hurtado Montillor
-María Fernanda Montero Román
-Daniel Corbacho Anes
-Ester Díaz Monzonis
-
 - **Desarrollo web y programación:** Daniel Mazo Sola, Ángel Younes Karim Mérida, Manuel Hurtado Montillor.
 - **Diseño gráfico y arte:** Daniel Corbacho Anes, Ester Díaz Monzonis, María Fernanda Montero Román.
 - **Tráiler del juego:** Daniel Corbacho Anes, María Fernanda Montero Román.
